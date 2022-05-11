@@ -1,0 +1,27 @@
+
+<div>
+    <h3 style="color: brown;">Lista de Productos</h3>
+        <table class="table  table-dark">
+            <thead>
+              <tr>
+                <th scope="col">titulo</th>
+                <th scope="col">precio</th>
+                <th scope="col">imagen</th>
+              </tr>
+            </thead>
+            <tbody id="filas"> 
+                
+              <%  for(let data of array){%>
+                  
+                  
+                  <tr>
+                <th><%=data.titulo %></th>
+                <th><%= data.precio %></th>
+                <th><img src="<%= data.url %>" alt="" style="height: 50px; width: 50px;"></th>                        
+              </tr>
+                <% } %>    
+            </tbody>
+          </table>
+</div>
+</div>
+<br>
